@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MintWise — Smart Personal Finance for Beginners</title>
+    <meta name="description" content="MintWise helps you understand money, budgeting, investing, and credit. Clear guides for people who want to take control of their finances.">
+    <meta name="keywords" content="personal finance, budgeting, investing, credit cards, savings, money management, financial literacy">
+    <meta name="author" content="MintWise">
+    <meta property="og:title" content="MintWise — Smart Personal Finance">
+    <meta property="og:description" content="Simple guides on budgeting, investing, credit, and saving money.">
+    <meta property="og:type" content="website">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">💰</span>
+                <span class="logo-text">MintWise</span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="#articles" class="nav-link">Articles</a>
+                <a href="#categories" class="nav-link">Topics</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+                <button id="menu-toggle" class="icon-btn mobile-only" onclick="document.getElementById('nav-links').classList.toggle('show')"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <span class="hero-badge">Personal Finance Made Simple</span>
+            <h1>Take control of your money. Start here.</h1>
+            <p>No jargon. No fluff. Just clear, actionable guides on budgeting, investing, credit, and saving — written for real people.</p>
+            <a href="#articles" class="btn-primary">Read Articles <i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+    <!-- FEATURED STAT BAR -->
+    <section class="stat-bar">
+        <div class="container stat-grid">
+            <div class="stat"><span class="stat-number">78%</span><span class="stat-label">of Americans live paycheck to paycheck</span></div>
+            <div class="stat"><span class="stat-number">$5,733</span><span class="stat-label">average credit card debt per person</span></div>
+            <div class="stat"><span class="stat-number">56%</span><span class="stat-label">of adults can't cover a $1,000 emergency</span></div>
+        </div>
+    </section>
+
+    <!-- ARTICLES -->
+    <section class="section" id="articles">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="articles-grid" id="articles-grid"></div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="section section-alt" id="categories">
+        <div class="container">
+            <h2 class="section-title">Explore Topics</h2>
+            <div class="categories-grid">
+                <div class="category-card" style="--accent: #10b981"><i class="fa-solid fa-piggy-bank"></i><h3>Budgeting</h3><p>Track your spending and save more</p></div>
+                <div class="category-card" style="--accent: #2563eb"><i class="fa-solid fa-credit-card"></i><h3>Credit</h3><p>Credit scores, cards, and debt</p></div>
+                <div class="category-card" style="--accent: #8b5cf6"><i class="fa-solid fa-chart-line"></i><h3>Investing</h3><p>Stocks, ETFs, and compound interest</p></div>
+                <div class="category-card" style="--accent: #f59e0b"><i class="fa-solid fa-shield-halved"></i><h3>Insurance</h3><p>Health, auto, life, and renters</p></div>
+                <div class="category-card" style="--accent: #ef4444"><i class="fa-solid fa-house"></i><h3>Real Estate</h3><p>Mortgages, renting vs buying</p></div>
+                <div class="category-card" style="--accent: #06b6d4"><i class="fa-solid fa-coins"></i><h3>Crypto</h3><p>Bitcoin, Ethereum, and blockchain</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="section">
+        <div class="container newsletter-box">
+            <h2>Get smarter about money — weekly.</h2>
+            <p>Join our free newsletter. One email per week with the best personal finance tips.</p>
+            <form class="newsletter-form" onsubmit="alert('Subscribed! Thank you.'); return false;">
+                <input type="email" placeholder="you@email.com" required>
+                <button type="submit" class="btn-primary">Subscribe Free</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <span class="logo"><span class="logo-icon">💰</span> <span class="logo-text">MintWise</span></span>
+                <p>Helping beginners understand money, one article at a time. No financial advice — just education.</p>
+            </div>
+            <div>
+                <h4>Navigation</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="disclaimer.html">Disclaimer</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 MintWise. All rights reserved. This site is for educational purposes only and does not constitute financial advice.</p>
+        </div>
+    </footer>
+
+    <!-- ADSENSE PLACEHOLDER (Activate in Phase 4) -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+    <script src="script.js"></script>
+</body>
+</html>

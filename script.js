@@ -97,13 +97,24 @@ const articles = [
 // ==========================================
 // RENDER ARTICLES
 // ==========================================
-function renderArticles() {
+function renderArticles(data = articles, title = "Latest") {
     const grid = document.getElementById('articles-grid');
+    const header = document.getElementById('articles-title');
     if (!grid) return;
 
-    grid.innerHTML = articles.map(a => `
+    if (header) {
+        if (title === "Latest") {
+            header.innerHTML = "Latest Articles";
+        } else {
+            header.innerHTML = `${title} Articles <span onclick="filterCategory('All')" style="font-size:0.95rem; color:var(--primary); cursor:pointer; margin-left:16px; border-bottom: 2px solid var(--primary); padding-bottom: 2px;"><i class="fa-solid fa-xmark"></i> Clear Filter</span>`;
+        }
+    }
+
+    grid.innerHTML = data.map(a => `
         <article class="article-card" onclick="window.location.href='${a.file}'">
-            <img src="${a.image}" alt="${a.title}" class="article-thumb" loading="lazy">
+            <div class="article-img-wrap">
+                <img src="${a.image}" alt="${a.title}" class="article-thumb" loading="lazy">
+            </div>
             <div class="article-body">
                 <span class="article-tag">${a.category}</span>
                 <h3>${a.title}</h3>
@@ -115,6 +126,16 @@ function renderArticles() {
             </div>
         </article>
     `).join('');
+}
+
+function filterCategory(category) {
+    if (category === 'All') {
+        renderArticles(articles, "Latest");
+    } else {
+        const filtered = articles.filter(a => a.category === category);
+        renderArticles(filtered, category);
+    }
+    document.getElementById('articles').scrollIntoView({ behavior: 'smooth' });
 }
 
 // ==========================================

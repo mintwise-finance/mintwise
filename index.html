@@ -58,7 +58,7 @@
     <!-- ARTICLES -->
     <section class="section" id="articles">
         <div class="container">
-            <h2 class="section-title">Latest Articles</h2>
+            <h2 class="section-title" id="articles-title">Latest Articles</h2>
             <div class="articles-grid" id="articles-grid"></div>
         </div>
     </section>
@@ -68,12 +68,12 @@
         <div class="container">
             <h2 class="section-title">Explore Topics</h2>
             <div class="categories-grid">
-                <div class="category-card" style="--accent: #10b981"><i class="fa-solid fa-piggy-bank"></i><h3>Budgeting</h3><p>Track your spending and save more</p></div>
-                <div class="category-card" style="--accent: #2563eb"><i class="fa-solid fa-credit-card"></i><h3>Credit</h3><p>Credit scores, cards, and debt</p></div>
-                <div class="category-card" style="--accent: #8b5cf6"><i class="fa-solid fa-chart-line"></i><h3>Investing</h3><p>Stocks, ETFs, and compound interest</p></div>
-                <div class="category-card" style="--accent: #f59e0b"><i class="fa-solid fa-shield-halved"></i><h3>Insurance</h3><p>Health, auto, life, and renters</p></div>
-                <div class="category-card" style="--accent: #ef4444"><i class="fa-solid fa-house"></i><h3>Real Estate</h3><p>Mortgages, renting vs buying</p></div>
-                <div class="category-card" style="--accent: #06b6d4"><i class="fa-solid fa-coins"></i><h3>Crypto</h3><p>Bitcoin, Ethereum, and blockchain</p></div>
+                <div class="category-card" style="--accent: #10b981" onclick="filterCategory('Budgeting')"><i class="fa-solid fa-piggy-bank"></i><h3>Budgeting</h3><p>Track your spending and save more</p></div>
+                <div class="category-card" style="--accent: #2563eb" onclick="filterCategory('Credit')"><i class="fa-solid fa-credit-card"></i><h3>Credit</h3><p>Credit scores, cards, and debt</p></div>
+                <div class="category-card" style="--accent: #8b5cf6" onclick="filterCategory('Investing')"><i class="fa-solid fa-chart-line"></i><h3>Investing</h3><p>Stocks, ETFs, and compound interest</p></div>
+                <div class="category-card" style="--accent: #f59e0b" onclick="filterCategory('Insurance')"><i class="fa-solid fa-shield-halved"></i><h3>Insurance</h3><p>Health, auto, life, and renters</p></div>
+                <div class="category-card" style="--accent: #ef4444" onclick="filterCategory('Real Estate')"><i class="fa-solid fa-house"></i><h3>Real Estate</h3><p>Mortgages, renting vs buying</p></div>
+                <div class="category-card" style="--accent: #06b6d4" onclick="filterCategory('Crypto')"><i class="fa-solid fa-coins"></i><h3>Crypto</h3><p>Bitcoin, Ethereum, and blockchain</p></div>
             </div>
         </div>
     </section>

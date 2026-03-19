@@ -91,6 +91,66 @@ const articles = [
         readTime: "8 min",
         image: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=600&h=400&fit=crop",
         file: "articles/bitcoin-beginners.html"
+    },
+    {
+        id: 10,
+        title: "The Ultimate Guide to Emergency Funds",
+        summary: "Why you need one, how much you should save, and where to keep it to maximize interest.",
+        category: "Budgeting",
+        date: "Mar 18, 2026",
+        readTime: "5 min",
+        image: "https://images.unsplash.com/photo-1607863680198-23d4b2565df0?w=600&h=400&fit=crop",
+        file: "articles/emergency-fund-guide.html"
+    },
+    {
+        id: 11,
+        title: "Snowball vs Avalanche: The Best Way to Pay Off Debt",
+        summary: "Two psychological and mathematical approaches to destroying your credit card debt forever.",
+        category: "Credit",
+        date: "Mar 18, 2026",
+        readTime: "7 min",
+        image: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=600&h=400&fit=crop",
+        file: "articles/snowball-vs-avalanche.html"
+    },
+    {
+        id: 12,
+        title: "ETFs vs Mutual Funds: Which Is Better for Beginners?",
+        summary: "Both offer diversification, but one is usually cheaper and more tax-efficient. Learn the clear differences.",
+        category: "Investing",
+        date: "Mar 18, 2026",
+        readTime: "6 min",
+        image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=600&h=400&fit=crop",
+        file: "articles/etfs-vs-mutual-funds.html"
+    },
+    {
+        id: 13,
+        title: "What is a 401(k) and How Does Employer Matching Work?",
+        summary: "If you aren't using your employer match, you are literally turning down free money. Here is how it works.",
+        category: "Investing",
+        date: "Mar 18, 2026",
+        readTime: "8 min",
+        image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=400&fit=crop",
+        file: "articles/what-is-a-401k.html"
+    },
+    {
+        id: 14,
+        title: "Ethereum Explained: How It Differs From Bitcoin",
+        summary: "Bitcoin is digital money. Ethereum is a global computer. Understand the difference before investing.",
+        category: "Crypto",
+        date: "Mar 18, 2026",
+        readTime: "7 min",
+        image: "https://images.unsplash.com/photo-1622737133809-d95047b9e673?w=600&h=400&fit=crop",
+        file: "articles/ethereum-explained.html"
+    },
+    {
+        id: 15,
+        title: "FHA vs Conventional Loans for First-Time Homebuyers",
+        summary: "You don't always need 20% down to buy a house. Learn the pros and cons of 3.5% down payment loans.",
+        category: "Real Estate",
+        date: "Mar 18, 2026",
+        readTime: "9 min",
+        image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=600&h=400&fit=crop",
+        file: "articles/fha-vs-conventional.html"
     }
 ];
 
